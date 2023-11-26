@@ -30,14 +30,10 @@
 
 <script type="module" src="js/app.js"></script>
 
-<!-- Скрипт для подключения legacy файлов. -->
-<!-- Подключение происходит автоматически, если браузер не может определить type="module"  -->
-<!-- (возможно требует доработки, потому что не все старые браузеры не знают этот тип)  -->
+
 <script>
   (function () {
-    // Массив scripts содержит названия всех файлов скриптов, которые необходимо подключить.
     const scripts = ['js/polyfills.legacy.js', 'js/app.legacy.js']
-    // const cjsVersion = 'js/polyfills.legacy.js'
 
     if (!('noModule' in HTMLScriptElement.prototype)) {
       for (var i = 0; i < scripts.length; i++) {

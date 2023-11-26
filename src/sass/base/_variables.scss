@@ -2,25 +2,43 @@
 
 :root {
 	// colors
-	--bacground-primary: #ececec;
-	--bacground-secondary: #868686;
-	--accent: #cc3636;
-	--accent2: darken(var(--accent), 10%);
-	--accent3: #d01515;
-	--primary-color: #333;
-	--secondary-color: #d3d9d7;
-	--link-color: var(--accent3);
+	--color-black: #000;
+	--color-white: #fff;
+	--color-white-200: #e9e3e6ff;
+	--color-white-300: #c3babaff;
+	--color-grey: #343434;
+	--color-dark: #1a1919;
+	--color-rose: #ff2770ff;
+	--color-blue: #45f3ffff;
+	--main-bg-color: var(--color-dark);
+	--secondary-bg-color: var(--color-white-300);
+	--main-text-color: var(--color-white);
+	--secondary-text-color: var(--color-black);
 
 	// container
-	--container: 1770px;
-	--fields: 75px;
+	--container: 1600px;
+	--fields: 32px;
 
-	// indent
-	--gap-4: 4px;
-	--gap-8: 8px;
-	--gap-16: 16px;
-	--gap-32: 32px;
-	--gap-56: 56px;
+	// border-radius
+	--border-radius: 8px;
+
+	// animation config
+	--transition-time: 0.2s;
+	--transition-time-long: 0.4s;
+	--transition-function: ease-in;
+
+	// Варианты горизонтальных отступов
+	--gap: 4px;
+	--gap-xxs: calc(var(--gap) * 2); // 8
+	--gap-xs: calc(var(--gap) * 3); // 12
+	--gap-xsm: calc(var(--gap) * 4); // 16
+	--gap-sm: calc(var(--gap) * 6); // 24
+	--gap-md: calc(var(--gap) * 9); // 36
+	--gap-lg: calc(var(--gap) * 12); // 48
+	--gap-xlg: calc(var(--gap) * 12); // 64
+	--gap-xl: calc(var(--gap) * 16); // 72
+	--gap-xxl: calc(var(--gap) * 24); // 96
+	--gap-xxxl: calc(var(--gap) * 35); // 140
 
 	// breakpoints
 	--b-xl: 1640px;
@@ -32,6 +50,7 @@
 	--font: "Lato", sans-serif;
 }
 /* stylelint-disable scss/dollar-variable-pattern */
+$break_xxl: 1800px;
 $break_xl: 1640px;
 $break_lg: 1320px;
 $break_md: 1023px;

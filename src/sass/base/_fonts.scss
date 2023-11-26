@@ -1,1 +1,21 @@
-@include font("Lato", "subset-Lato-Regular", 400, normal);
+@include font("Manrope", "Manrope-ExtraBold", 800, normal);
+@include font("Manrope", "Manrope-Bold", 700, normal);
+@include font("Manrope", "Manrope-SemiBold", 600, normal);
+@include font("Manrope", "Manrope-Medium", 500, normal);
+@include font("Manrope", "Manrope-Regular", 400, normal);
+@include font("Manrope", "Manrope-Light", 300, normal);
+@include font("Manrope", "Manrope-Thin", 200, normal);
+
+:root {
+	--font-famaly-main: "Manrope", sans-serif;
+	--font-size-s: 12px;
+	--font-line-s: 16px;
+	--font-small:
+		var(--font-size-s) / var(--font-line-s)
+		var(--font-famaly-main);
+	--font-size-m: 16px;
+	--font-line-m: 24px;
+	--font-medium:
+		var(--font-size-m) / var(--font-line-m)
+		var(--font-famaly-main);
+}
