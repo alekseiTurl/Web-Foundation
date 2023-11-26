@@ -1,0 +1,41 @@
+@use "sass:math";
+
+:root {
+	// colors
+	--bacground-primary: #ececec;
+	--bacground-secondary: #868686;
+	--accent: #cc3636;
+	--accent2: darken(var(--accent), 10%);
+	--accent3: #d01515;
+	--primary-color: #333;
+	--secondary-color: #d3d9d7;
+	--link-color: var(--accent3);
+
+	// container
+	--container: 1770px;
+	--fields: 75px;
+
+	// indent
+	--gap-4: 4px;
+	--gap-8: 8px;
+	--gap-16: 16px;
+	--gap-32: 32px;
+	--gap-56: 56px;
+
+	// breakpoints
+	--b-xl: 1640px;
+	--b-lg: 1320px;
+	--b-md: 1023px;
+	--b-sm: 767px;
+	--b-xs: 575px;
+	--b-xxs: 449px;
+	--font: "Lato", sans-serif;
+}
+/* stylelint-disable scss/dollar-variable-pattern */
+$break_xl: 1640px;
+$break_lg: 1320px;
+$break_md: 1023px;
+$break_sm: 767px;
+$break_xs: 575px;
+$break_xxs: 449px;
+/* stylelint-enable */

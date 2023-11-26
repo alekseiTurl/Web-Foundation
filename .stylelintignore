@@ -1,0 +1,13 @@
+# Node dependencies
+node_modules
+gulp
+
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea

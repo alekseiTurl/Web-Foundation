@@ -1,0 +1,214 @@
+/* stylelint-disable no-descending-specificity */
+.block {
+	display: block;
+}
+
+.flex {
+	display: flex;
+}
+
+.none {
+	display: none;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-start {
+	align-items: start;
+}
+
+.align-end {
+	align-items: end;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-start {
+	justify-content: start;
+}
+
+.justify-end {
+	justify-content: end;
+}
+
+.h-stack-4 {
+	display: flex;
+
+	& > * {
+		&:not(:last-child) {
+			margin-right: var(--gap-4);
+		}
+	}
+}
+
+.h-stack-8 {
+	display: flex;
+
+	& > * {
+		&:not(:last-child) {
+			margin-right: var(--gap-8);
+		}
+	}
+}
+
+.h-stack-16 {
+	display: flex;
+
+	& > * {
+		&:not(:last-child) {
+			margin-right: var(--gap-16);
+		}
+	}
+}
+
+.h-stack-32 {
+	display: flex;
+
+	& > * {
+		&:not(:last-child) {
+			margin-right: var(--gap-32);
+		}
+	}
+}
+
+.h-stack-56 {
+	display: flex;
+
+	& > * {
+		&:not(:last-child) {
+			margin-right: var(--gap-56);
+		}
+	}
+}
+
+.v-stack-4 {
+	display: flex;
+	flex-direction: column;
+
+	& > * {
+		&:not(:last-child) {
+			margin-bottom: var(--gap-4);
+		}
+	}
+}
+
+.v-stack-8 {
+	display: flex;
+	flex-direction: column;
+
+	& > * {
+		&:not(:last-child) {
+			margin-bottom: var(--gap-8);
+		}
+	}
+}
+
+.v-stack-16 {
+	display: flex;
+	flex-direction: column;
+
+	& > * {
+		&:not(:last-child) {
+			margin-bottom: var(--gap-16);
+		}
+	}
+}
+
+.v-stack-32 {
+	display: flex;
+	flex-direction: column;
+
+	& > * {
+		&:not(:last-child) {
+			margin-bottom: var(--gap-32);
+		}
+	}
+}
+
+.v-stack-56 {
+	display: flex;
+	flex-direction: column;
+
+	& > * {
+		&:not(:last-child) {
+			margin-bottom: var(--gap-56);
+		}
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+@include xl-screen {
+	.xl-block {
+		display: block;
+	}
+
+	.xl-flex {
+		display: flex;
+	}
+
+	.xl-none {
+		display: none;
+	}
+
+	.xl-text-center {
+		text-align: center;
+	}
+}
+
+@include lg-screen {
+	.lg-block {
+		display: block;
+	}
+
+	.lg-flex {
+		display: flex;
+	}
+
+	.lg-none {
+		display: none;
+	}
+}
+
+@include md-screen {
+	.md-block {
+		display: block;
+	}
+
+	.md-flex {
+		display: flex;
+	}
+
+	.md-none {
+		display: none;
+	}
+}
+
+@include sm-screen {
+	.sm-block {
+		display: block;
+	}
+
+	.sm-flex {
+		display: flex;
+	}
+
+	.sm-none {
+		display: none;
+	}
+}
+/* stylelint-enable no-descending-specificity */

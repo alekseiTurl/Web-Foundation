@@ -1,0 +1,56 @@
+{% import "data/_data.twig" as data %}
+{% import "partials/_mixins.twig" as mixins %}
+{% set debug = false %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#fff"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="stylesheet" media="all" href="css/style.css"/>
+  {# {% include "../partials/_media-tags.twig" %} #}
+</head>
+<body>
+<!-- BEGIN content -->
+<div class="page">
+  {% if debug %}
+    {% include "partials/_debug.twig" %}
+  {% endif %}
+  {% include "partials/_header.twig" %}
+  <div class="main">
+    {% block content %}{% endblock %}
+  </div>
+  {% include "partials/_footer.twig" %}
+  {% include "partials/_modals.twig" %}
+</div>
+<!-- END content -->
+
+<script type="module" src="js/app.js"></script>
+
+<!-- Скрипт для подключения legacy файлов. -->
+<!-- Подключение происходит автоматически, если браузер не может определить type="module"  -->
+<!-- (возможно требует доработки, потому что не все старые браузеры не знают этот тип)  -->
+<script>
+  (function () {
+    // Массив scripts содержит названия всех файлов скриптов, которые необходимо подключить.
+    const scripts = ['js/polyfills.legacy.js', 'js/app.legacy.js']
+    // const cjsVersion = 'js/polyfills.legacy.js'
+
+    if (!('noModule' in HTMLScriptElement.prototype)) {
+      for (var i = 0; i < scripts.length; i++) {
+        const loadScript = document.createElement('script')
+        loadScript.src = scripts[i]
+        document.body.appendChild(loadScript)
+      }
+    }
+  })()
+</script>
+
+<!-- !!!!!!!! START: HELPER ТОЛЬКО ДЛЯ DEV !!!!!!!!! -->
+<script src="js/helper-menu.js"></script>
+<!-- !!!!!!!! END: HELPER ТОЛЬКО ДЛЯ DEV !!!!!!!!! -->
+</body>
+</html>
