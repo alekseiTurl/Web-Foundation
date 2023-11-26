@@ -1,8 +1,9 @@
 # Node dependencies
 node_modules
 gulp
+fonts
 
-
+*.twig
 # Logs
 logs
 *.log
