@@ -16,6 +16,8 @@ gulp.task('svgo', () => getTaskBuild('svgo'))
 gulp.task('webp', () => getTaskBuild('webp'))
 gulp.task('webpack', getTaskBuild('webpack'))
 gulp.task('fonts', getTaskBuild('fonts'))
+gulp.task('favicon', getTaskBuild('favicon'))
+gulp.task('favicon-main', getTaskBuild('favicon'))
 
 gulp.task('copy:watch', getTaskWatch('copy'))
 gulp.task('nunjucks:watch', getTaskWatch('nunjucks'))
@@ -37,9 +39,9 @@ const setmodeDev = done => {
     done()
 }
 
-gulp.task('build', gulp.series(setmodeProd, 'clean', 'sprite:svg', 'svgo', 'webp', 'nunjucks', 'sass', 'webpack', 'copy'))
+gulp.task('build', gulp.series(setmodeProd, 'clean', 'sprite:svg', 'svgo', 'webp', 'nunjucks', 'sass', 'webpack', 'copy', 'favicon', 'favicon-main'))
 
-gulp.task('build:dev', gulp.series(setmodeDev, 'clean', 'sprite:svg', 'svgo', 'webp', 'nunjucks', 'sass', 'webpack', 'copy'))
+gulp.task('build:dev', gulp.series(setmodeDev, 'clean', 'sprite:svg', 'svgo', 'webp', 'nunjucks', 'sass', 'webpack', 'copy', 'favicon', 'favicon-main'))
 
 gulp.task(
     'watch',
