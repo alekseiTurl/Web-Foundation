@@ -1,0 +1,15 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: var(--gap-lg);
+        @include sm-screen {
+          margin-right: var(--gap-md);
+        }
+    }
+  }
+}

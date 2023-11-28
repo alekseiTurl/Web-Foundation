@@ -1,0 +1,41 @@
+.header {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 99%;
+    padding: var(--gap-md) 0;
+    transform: translateX(-50%);
+    z-index: 5;
+
+    @include xs-screen {
+        position: fixed;
+        top: auto;
+        bottom: 10px;
+        padding: var(--gap-xs) 0;
+    }
+
+  .icon-logo-nowrap{
+    color: var(--color-blue);
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      @include xs-screen {
+          flex-direction: column-reverse;
+      }
+  }
+
+    & .logo {
+        @include xs-screen {
+            display: none;
+        }
+    }
+
+    &__nav {
+        @include xs-screen {
+            width: 100%;
+        }
+    }
+}

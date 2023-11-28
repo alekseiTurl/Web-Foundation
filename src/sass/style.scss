@@ -17,7 +17,13 @@
 // libs
 // @import './libs/fancybox';
 
+// UI
+@import "./ui-blocks/ui-link";
+
 // BLOCKS
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/logo";
 
 // HELPERS
 @import "./base/helpers";

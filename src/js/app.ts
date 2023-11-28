@@ -8,4 +8,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initSwipers()
     modalsInit()
     imgLoadInit()
+
 })

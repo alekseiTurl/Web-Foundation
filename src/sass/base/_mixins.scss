@@ -74,11 +74,14 @@
 	transform: translate(-50%, -50%);
 }
 
-@mixin hover {
+@mixin hover-focus {
 	@media (hover: hover) and (pointer: fine) {
 		&:hover {
 			@content;
 		}
+        &:focus {
+            @content;
+        }
 	}
 }
 

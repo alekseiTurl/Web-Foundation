@@ -1,5 +1,19 @@
+{% import "data/_data.twig" as data %}
 <!-- start header -->
-<header class="header">
-    
+<header class="header glass">
+    <div class="container header-container ">
+        <a href="/" class="logo">
+           <span class="logo__left">Alex</span>
+            <span class="logo__separator">|</span>
+            <span class="logo__right"> Tur</span>
+        </a>
+        <nav class="header__nav nav" data-nav>
+            <ul class="nav__list">
+                {% for item in data.menuItems %}
+                    <li class="nav__item"><a href="{{ item.link }}" class="nav__link ui-link">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
 </header>
 <!-- end header -->
