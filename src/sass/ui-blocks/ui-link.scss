@@ -1,8 +1,8 @@
 .ui-link {
-  position: relative;
-  padding: 10px;
-  color: var(--main-text-color);
-  text-decoration: none;
+    position: relative;
+    padding: 10px;
+    color: var(--main-text-color);
+    text-decoration: none;
 
     &::after {
         width: 0;
@@ -18,18 +18,18 @@
             height: 2px;
             width: 100%;
             border-radius: var(--border-radius);
-            background: linear-gradient(137deg,var(--color-blue) 0%, var(--color-rose) 90%);
+            background: linear-gradient(137deg, var(--color-blue) 0%, var(--color-rose) 90%);
             animation: gradient-link var(--transition-time-long) var(--transition-function);
         }
     }
 }
 
 @keyframes gradient-link {
-  0% {
-   width: 0;
-  }
-  100% {
-      width: 100% ;
-  }
-}
+    0% {
+        width: 0;
+    }
 
+    100% {
+        width: 100%;
+    }
+}

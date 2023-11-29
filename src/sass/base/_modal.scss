@@ -1,74 +1,74 @@
 .modal {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden auto;
-	display: flex;
-	overscroll-behavior: contain;
-	flex-direction: column;
-	padding: 30px 60px;
-	z-index: 100;
-	opacity: 0;
-	visibility: hidden;
-	transition-property: opacity, visibility;
-	transition-duration: 0.2s;
-	background: rgb(0 0 0 / 40%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden auto;
+    display: flex;
+    overscroll-behavior: contain;
+    flex-direction: column;
+    padding: 30px 60px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: 0.2s;
+    background: rgb(0 0 0 / 40%);
 
-	&__inner {
-		position: relative;
-		margin: auto;
-		background: white;
-	}
+    &__inner {
+        position: relative;
+        margin: auto;
+        background: white;
+    }
 
-	&.is-active {
-		opacity: 1;
-		visibility: visible;
-		transition-duration: 0.3s;
+    &.is-active {
+        opacity: 1;
+        visibility: visible;
+        transition-duration: 0.3s;
 
-		& .modal__inner {
-			@include sm-screen {
-				transform: translateY(0);
-				overflow-y: hidden;
-			}
-		}
-	}
+        & .modal__inner {
+            @include sm-screen {
+                transform: translateY(0);
+                overflow-y: hidden;
+            }
+        }
+    }
 
-	&__header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-	&__close {
-		position: relative;
-		background: transparent;
-		border: none;
-		border-radius: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 30px;
-		height: 30px;
-		margin-left: auto;
-		cursor: pointer;
-		transition: 0.2s ease-in-out;
+    &__close {
+        position: relative;
+        background: transparent;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
 
-		.icon {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			font-size: 16px;
-		}
-	}
+        .icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+        }
+    }
 
-	&__center {
-		margin: auto;
-	}
+    &__center {
+        margin: auto;
+    }
 }
 
 .scroll-locked {
-	overflow: hidden;
+    overflow: hidden;
 }

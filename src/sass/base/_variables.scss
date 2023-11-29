@@ -1,54 +1,54 @@
-@use "sass:math";
+@use 'sass:math';
 
 :root {
-	// colors
-	--color-black: #000;
-	--color-white: #fff;
-	--color-white-200: #e9e3e6;
-	--color-white-300: #c3baba;
-	--color-grey: #343434;
-	--color-dark: #1a1919;
-	--color-rose: #ff2770;
-	--color-blue: #45f3ff;
-	--main-bg-color: var(--color-dark);
-	--secondary-bg-color: var(--color-white-300);
-	--main-text-color: var(--color-white);
-	--secondary-text-color: var(--color-black);
+    // colors
+    --color-black: #000;
+    --color-white: #fff;
+    --color-white-200: #e9e3e6;
+    --color-white-300: #c3baba;
+    --color-grey: #343434;
+    --color-dark: #1a1919;
+    --color-rose: #ff2770;
+    --color-blue: #45f3ff;
+    --main-bg-color: var(--color-dark);
+    --secondary-bg-color: var(--color-white-300);
+    --main-text-color: var(--color-white);
+    --secondary-text-color: var(--color-black);
     --color-scroll: var(--color-white-300);
 
-	// container
-	--container: 1600px;
-	--fields: 32px;
+    // container
+    --container: 1600px;
+    --fields: 32px;
 
-	// border-radius
-	--border-radius: 8px;
+    // border-radius
+    --border-radius: 8px;
 
-	// animation config
-	--transition-time: 0.2s;
-	--transition-time-long: 0.4s;
-	--transition-function: cubic-bezier(0.33, 1, 0.68, 1);
+    // animation config
+    --transition-time: 0.2s;
+    --transition-time-long: 0.4s;
+    --transition-function: cubic-bezier(0.33, 1, 0.68, 1);
 
-	// Варианты горизонтальных отступов
-	--gap: 4px;
-	--gap-xxs: calc(var(--gap) * 2); // 8
-	--gap-xs: calc(var(--gap) * 3); // 12
-	--gap-xsm: calc(var(--gap) * 4); // 16
-	--gap-sm: calc(var(--gap) * 6); // 24
-	--gap-md: calc(var(--gap) * 9); // 36
-	--gap-lg: calc(var(--gap) * 12); // 48
-	--gap-xlg: calc(var(--gap) * 12); // 64
-	--gap-xl: calc(var(--gap) * 16); // 72
-	--gap-xxl: calc(var(--gap) * 24); // 96
-	--gap-xxxl: calc(var(--gap) * 35); // 140
+    // Варианты горизонтальных отступов
+    --gap: 4px;
+    --gap-xxs: calc(var(--gap) * 2); // 8
+    --gap-xs: calc(var(--gap) * 3); // 12
+    --gap-xsm: calc(var(--gap) * 4); // 16
+    --gap-sm: calc(var(--gap) * 6); // 24
+    --gap-md: calc(var(--gap) * 9); // 36
+    --gap-lg: calc(var(--gap) * 12); // 48
+    --gap-xlg: calc(var(--gap) * 12); // 64
+    --gap-xl: calc(var(--gap) * 16); // 72
+    --gap-xxl: calc(var(--gap) * 24); // 96
+    --gap-xxxl: calc(var(--gap) * 35); // 140
 
-	// breakpoints
-	--b-xl: 1640px;
-	--b-lg: 1320px;
-	--b-md: 1023px;
-	--b-sm: 767px;
-	--b-xs: 575px;
-	--b-xxs: 449px;
-	--font: "Lato", sans-serif;
+    // breakpoints
+    --b-xl: 1640px;
+    --b-lg: 1320px;
+    --b-md: 1023px;
+    --b-sm: 767px;
+    --b-xs: 575px;
+    --b-xxs: 449px;
+    --font: 'Lato', sans-serif;
 }
 /* stylelint-disable scss/dollar-variable-pattern */
 $break_xxl: 1800px;
@@ -57,5 +57,5 @@ $break_lg: 1320px;
 $break_md: 1023px;
 $break_sm: 767px;
 $break_xs: 575px;
-$break_xxs: 449px;
+$break_xxs: 420px;
 /* stylelint-enable */

@@ -13,8 +13,9 @@
   "rules": {
     "property-case": "lower",
     "selector-type-case": "lower",
+    "string-quotes": "single",
     "no-unknown-animations":true,
-    "indentation": "tab",
+    "indentation": 4,
     "selector-max-compound-selectors": 3,
     "no-duplicate-selectors": true,
     "shorthand-property-no-redundant-values": true,
@@ -32,7 +33,7 @@
     "declaration-block-no-duplicate-properties": [
       true,
       {
-        "ignore": ["consecutive-duplicates"],
+        "ignore": ["consecutive-duplicates"]
       }
     ],
     "plugin/selector-bem-pattern": {

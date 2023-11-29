@@ -2,7 +2,7 @@
 node_modules
 gulp
 fonts
-
+gulpfile.babel.js
 *.twig
 # Logs
 logs

@@ -21,7 +21,7 @@ module.exports = {
             {
                 ignoreComments: true,
                 ignoreTemplateLiterals: true,
-                code: 125,
+                code: 225,
             },
         ],
         indent: [ 'error', 4 ],

@@ -5,24 +5,32 @@
     &__left {
         color: var(--color-blue);
         animation: flicker 5s infinite alternate;
-  }
+    }
+
     &__separator {
         color: var(--color-blue);
         animation: flicker 6s infinite alternate;
     }
-
 }
+
 @keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow:
+            0 0 40px var(--color-white),
+            0 0 40px var(--color-blue),
+            0 0 80px var(--color-blue),
+            0 0 90px var(--color-blue),;
+    }
 
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow:
-      0 0 40px var(--color-white),
-      0 0 40px var(--color-blue),
-      0 0 80px var(--color-blue),
-      0 0 90px var(--color-blue),
-  }
-
-  20%, 24%, 55% {
-    text-shadow: none;
-  }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
 }

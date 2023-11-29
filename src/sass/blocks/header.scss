@@ -14,18 +14,19 @@
         padding: var(--gap-xs) 0;
     }
 
-  .icon-logo-nowrap{
-    color: var(--color-blue);
-  }
+    .icon-logo-nowrap {
+        color: var(--color-blue);
+    }
 
-  &-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-      @include xs-screen {
-          flex-direction: column-reverse;
-      }
-  }
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include xs-screen {
+            flex-direction: column-reverse;
+        }
+    }
 
     & .logo {
         @include xs-screen {

@@ -1,106 +1,106 @@
 .heading-1 {
-	font-style: normal;
-	font-weight: 600;
+    font-style: normal;
+    font-weight: 600;
 
-	@include xxl-screen {
-		font-size: 36px;
-	}
+    @include xxl-screen {
+        font-size: 36px;
+    }
 
-	@include lg-screen {
-		font-size: 32px;
-	}
+    @include lg-screen {
+        font-size: 32px;
+    }
 
-	@include sm-screen {
-		font-size: 28px;
-	}
+    @include sm-screen {
+        font-size: 28px;
+    }
 
-	@include xs-screen {
-		font-size: 20px;
-	}
+    @include xs-screen {
+        font-size: 20px;
+    }
 }
 
 .heading-2 {
-	font-style: normal;
-	font-weight: 500;
+    font-style: normal;
+    font-weight: 500;
 
-	@include xxl-screen {
-		font-size: 24px;
-	}
+    @include xxl-screen {
+        font-size: 24px;
+    }
 
-	@include lg-screen {
-		font-size: 20px;
-	}
+    @include lg-screen {
+        font-size: 20px;
+    }
 
-	@include sm-screen {
-		font-size: 18px;
-	}
+    @include sm-screen {
+        font-size: 18px;
+    }
 }
 
 .heading-3 {
-	font-style: normal;
-	font-weight: 500;
+    font-style: normal;
+    font-weight: 500;
 
-	@include xxl-screen {
-		font-size: 22px;
-	}
+    @include xxl-screen {
+        font-size: 22px;
+    }
 
-	@include lg-screen {
-		font-size: 20px;
-	}
+    @include lg-screen {
+        font-size: 20px;
+    }
 
-	@include sm-screen {
-		font-size: 18px;
-	}
+    @include sm-screen {
+        font-size: 18px;
+    }
 }
 
 .text-1 {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
 
-	@include xxl-screen {
-		font-size: 20px;
-	}
+    @include xxl-screen {
+        font-size: 20px;
+    }
 
-	@include sm-screen {
-		font-size: 18px;
-	}
+    @include sm-screen {
+        font-size: 18px;
+    }
 
-	@include xs-screen {
-		font-size: 16px;
-	}
+    @include xs-screen {
+        font-size: 16px;
+    }
 }
 
 .text-2 {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
 
-	@include sm-screen {
-		font-size: 16px;
-	}
+    @include sm-screen {
+        font-size: 16px;
+    }
 
-	@include xs-screen {
-		font-size: 14px;
-	}
+    @include xs-screen {
+        font-size: 14px;
+    }
 }
 
 .text-3 {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
 
-	@include xs-screen {
-		font-size: 14px;
-	}
+    @include xs-screen {
+        font-size: 14px;
+    }
 }
 
 .text-4 {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
 
-	@include xs-screen {
-		font-size: 12px;
-	}
+    @include xs-screen {
+        font-size: 12px;
+    }
 }

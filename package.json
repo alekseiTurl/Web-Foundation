@@ -96,7 +96,7 @@
     "stylelint-selector-bem-pattern": "^3.0.1",
     "through2": "^3.0.2",
     "ts-loader": "^9.4.2",
-    "typescript": "^5.0.4",
+    "typescript": "5.1",
     "vanilla-lazyload": "^17.8.3",
     "webpack": "^5.81.0",
     "webpack-bundle-analyzer": "^4.8.0",

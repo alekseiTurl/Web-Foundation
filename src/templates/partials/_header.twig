@@ -10,7 +10,14 @@
         <nav class="header__nav nav" data-nav>
             <ul class="nav__list">
                 {% for item in data.menuItems %}
-                    <li class="nav__item"><a href="{{ item.link }}" class="nav__link ui-link">{{ item.title }}</a></li>
+                    <li class="nav__item">
+                        <a href="{{ item.link }}" class="nav__link ui-link text-3">
+                            <span>
+                                {{ item.title }}
+                            </span>
+                           {{ mixins.icon(item.icon) }}
+                        </a>
+                    </li>
                 {% endfor %}
             </ul>
         </nav>

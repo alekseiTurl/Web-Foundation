@@ -3,27 +3,27 @@
 // @import 'swiper/src/swiper';
 
 // VARIABLES AND MIXINS
-@import "./base/variables";
-@import "./base/mixins";
+@import './base/variables';
+@import './base/mixins';
 
 // DEFAULTS
-@import "./base/fonts";
-@import "./base/normalize";
-@import "./generated/sprite-svg";
-@import "./base/common";
-@import "./base/typography";
-@import "./base/modal";
+@import './base/fonts';
+@import './base/normalize';
+@import './generated/sprite-svg';
+@import './base/common';
+@import './base/typography';
+@import './base/modal';
 
 // libs
 // @import './libs/fancybox';
 
 // UI
-@import "./ui-blocks/ui-link";
+@import './ui-blocks/ui-link';
 
 // BLOCKS
-@import "./blocks/header";
-@import "./blocks/nav";
-@import "./blocks/logo";
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/logo';
 
 // HELPERS
-@import "./base/helpers";
+@import './base/helpers';
