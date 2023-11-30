@@ -4,7 +4,6 @@ body {
     font: var(--font-medium);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-height: 2000px;
 
     @include xs-screen {
         font: var(--font-small);
