@@ -1,0 +1,18 @@
+.typewriter {
+    font-family: monospace;
+    line-height: 1.5em;
+    font-size: 1.8em;
+    color: var(--color-white-300);
+
+    @include lg-screen {
+        font-size: 1.4em;
+    }
+
+    @include sm-screen {
+        font-size: 1.2em;
+    }
+
+    @include xs-screen {
+        font-size: 1.4em;
+    }
+}

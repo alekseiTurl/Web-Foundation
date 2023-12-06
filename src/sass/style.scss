@@ -20,11 +20,17 @@
 // UI
 @import './ui-blocks/ui-link';
 
+// FEATURES
+@import 'features/cube';
+@import 'features/glass';
+@import 'features/typewriter';
+@import 'features/transform-card';
+
 // BLOCKS
 @import './blocks/header';
 @import './blocks/nav';
 @import './blocks/logo';
-@import './blocks/cube';
+@import './blocks/hero';
 
 // HELPERS
 @import './base/helpers';

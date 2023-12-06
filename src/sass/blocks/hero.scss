@@ -2,4 +2,52 @@
     position: relative;
     min-height: 100dvh;
     min-height: 100vh;
+    padding: 160px 80px 0;
+
+    @include sm-screen {
+        padding: 140px 20px 0;
+    }
+
+    @include xs-screen {
+        padding: 40px 20px 0;
+    }
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__transform-card {
+        min-height: 60dvh;
+        min-height: 60vh;
+        width: 50%;
+        height: 70%;
+
+        @include xl-screen {
+            width: 60%;
+        }
+
+        @include md-screen {
+            width: 100%;
+        }
+
+        @include sm-screen {
+            min-height: 40dvh;
+            min-height: 40vh;
+        }
+
+        @include xxs-screen {
+            min-height: 45dvh;
+            min-height: 45vh;
+        }
+
+        &-content {
+            padding: var(--gap-md);
+
+            @include md-screen {
+                padding: var(--gap-xsm);
+            }
+        }
+    }
 }
