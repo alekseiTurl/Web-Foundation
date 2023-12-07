@@ -1,0 +1,102 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--gap-xsm) var(--gap-sm);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+
+    &--icon {
+        .icon {
+            font-size: 24px;
+            margin-right: var(--gap-xsm);
+        }
+    }
+
+    &--primary {
+        position: relative;
+        overflow: hidden;
+        background-color: var(--color-white-200);
+        color: var(--color-dark);
+        transition:
+            background-color var(--transition-time-long) var(--transition-function),
+            box-shadow var(--transition-time-long) var(--transition-function),
+            opacity var(--transition-time-long) var(--transition-function);
+
+        @include hover-focus {
+            background-color: var(--color-blue);
+            box-shadow: 0 0 10px var(--color-blue);
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 150px;
+            width: 30px;
+            background: #fff;
+            left: -55px;
+            top: -40px;
+            transform: rotate(37deg);
+            transition: all 0.3s;
+            opacity: 0.5;
+            animation-name: move-light;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    &--secondary {
+        position: relative;
+        overflow: hidden;
+        background-color: var(--color-grey);
+        color: var(--color-white-200);
+        transition:
+            background-color var(--transition-time-long) var(--transition-function),
+            box-shadow var(--transition-time-long) var(--transition-function),
+            opacity var(--transition-time-long) var(--transition-function);
+
+        @include hover-focus {
+            background-color: var(--color-rose);
+            box-shadow: 0 0 10px var(--color-rose);
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 150px;
+            width: 30px;
+            background: #fff;
+            left: -55px;
+            top: -40px;
+            transform: rotate(37deg);
+            transition: all 0.3s;
+            opacity: 0.5;
+            animation-name: move-light;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+    }
+}
+
+@keyframes move-light {
+    0% {
+        left: -100%;
+    }
+
+    5% {
+        left: 200%;
+    }
+
+    100% {
+        left: 200%;
+    }
+}

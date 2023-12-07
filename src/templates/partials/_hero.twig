@@ -19,8 +19,19 @@
     </div>
 
     <div class="container hero-container">
+        <div class="hero__btn-container">
+            <a href="#projects" class="hero__btn btn btn--primary btn--icon">
+                {{ mixins.icon('projects') }}
+                <span class="btn__text">Projects</span>
+            </a>
+            <a href="https://github.com/alekseiTurl" target="_blank" class="hero__btn btn btn--secondary btn--icon">
+                {{ mixins.icon('github') }}
+                <span class="btn__text">GitHub</span>
+            </a>
+        </div>
         <div class="transform-container hero__transform-card">
             <div class="glass typewriter transform-card hero__transform-card-content"></div>
         </div>
+
     </div>
 </section>

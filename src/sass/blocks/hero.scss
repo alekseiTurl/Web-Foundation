@@ -15,7 +15,7 @@
     &-container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     &__transform-card {
@@ -48,6 +48,18 @@
             @include md-screen {
                 padding: var(--gap-xsm);
             }
+        }
+    }
+
+    &__btn-container {
+        margin: 0 auto;
+    }
+
+    &__btn {
+        min-width: 300px;
+
+        &:not(:last-child) {
+            margin-bottom: var(--gap-lg);
         }
     }
 }
