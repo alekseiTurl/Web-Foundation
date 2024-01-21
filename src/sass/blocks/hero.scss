@@ -14,7 +14,7 @@
 
     &-container {
         display: flex;
-        align-items: center;
+        align-items: stretch;
         justify-content: flex-start;
     }
 
@@ -51,8 +51,22 @@
         }
     }
 
-    &__btn-container {
-        margin: 0 auto;
+    &__main-container {
+        padding: var(--gap-sm);
+        margin-right: var(--gap-lg);
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: var(--gap-md);
+        @include sm-screen {
+            margin-bottom: var(--gap-sm);
+        }
+    }
+    &__description {
+        margin-bottom: var(--gap-sm);
+        @include sm-screen {
+            margin-bottom: var(--gap-xsm);
+        }
     }
 
     &__btn {

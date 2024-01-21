@@ -3,12 +3,14 @@ node_modules
 gulp
 fonts
 gulpfile.babel.js
+_sprite-svg.scss
 *.twig
 # Logs
 logs
 *.log
 *.js
 *.ts
+*.svg
 
 # Misc
 .DS_Store

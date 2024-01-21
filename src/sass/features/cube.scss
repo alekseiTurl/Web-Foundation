@@ -1,7 +1,7 @@
 .cube {
     position: absolute;
     top: 15em;
-    left: 5%;
+    left: 47%;
     width: 200px;
     height: 200px;
     transform-style: preserve-3d;
@@ -52,15 +52,15 @@
 }
 
 .cube-2 {
-    top: 40em;
-    left: 85%;
-
+    top: 30em;
+    left: 70%;
+    animation: animate 6s linear infinite reverse;
     @include sm-screen {
-        left: 60%;
+        left: 40%;
     }
 
     @include xs-screen {
-        left: 45%;
+        left: 25%;
     }
 
     div {

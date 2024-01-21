@@ -1,9 +1,32 @@
-.heading-1 {
+// headings
+.banner {
     font-style: normal;
     font-weight: 600;
 
     @include xxl-screen {
+        font-size: 42px;
+    }
+
+    @include lg-screen {
         font-size: 36px;
+    }
+
+    @include md-screen {
+        font-size: 32px;
+    }
+
+    @include sm-screen {
+        font-size: 24px;
+    }
+}
+
+.heading-1 {
+    font-size: 42px;
+    line-height: 57.37px;
+
+    @include xl-screen {
+        font-size: 36px;
+        line-height: 49px;
     }
 
     @include lg-screen {
@@ -11,96 +34,94 @@
     }
 
     @include sm-screen {
-        font-size: 28px;
-    }
-
-    @include xs-screen {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
 
 .heading-2 {
-    font-style: normal;
-    font-weight: 500;
+    font-size: 36px;
 
-    @include xxl-screen {
-        font-size: 24px;
+    @include xl-screen {
+        font-size: 32px;
     }
 
     @include lg-screen {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     @include sm-screen {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
 .heading-3 {
-    font-style: normal;
-    font-weight: 500;
+    font-size: 24px;
 
-    @include xxl-screen {
-        font-size: 22px;
+    @include xl-screen {
+        font-size: 20px;
     }
 
     @include lg-screen {
-        font-size: 20px;
-    }
-
-    @include sm-screen {
         font-size: 18px;
     }
 }
 
-.text-1 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
+.heading-4 {
+    font-size: 20px;
 
-    @include xxl-screen {
-        font-size: 20px;
-    }
-
-    @include sm-screen {
+    @include xl-screen {
         font-size: 18px;
     }
 
-    @include xs-screen {
+    @include lg-screen {
         font-size: 16px;
     }
 }
 
-.text-2 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+.heading-5 {
+    font-size: 16px;
 
-    @include sm-screen {
-        font-size: 16px;
-    }
-
-    @include xs-screen {
+    @include xl-screen {
         font-size: 14px;
     }
 }
 
+.heading-6 {
+    font-size: 12px;
+}
+
+.text-1 {
+    font-size: 24px;
+
+    @include xl-screen {
+        font-size: 20px;
+    }
+
+    @include lg-screen {
+        font-size: 18px;
+    }
+}
+
+.text-2 {
+    font-size: 20px;
+
+    @include xl-screen {
+        font-size: 18px;
+    }
+
+    @include lg-screen {
+        font-size: 16px;
+    }
+}
+
 .text-3 {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
 
-    @include xs-screen {
+    @include xl-screen {
         font-size: 14px;
     }
 }
 
 .text-4 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-
-    @include xs-screen {
-        font-size: 12px;
-    }
+    font-size: 12px;
 }
